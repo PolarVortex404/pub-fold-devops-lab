@@ -40,8 +40,8 @@ app.post('/api/students', (req, res) => {
        if (index === -1 && name !== '') {
            students.push(name)
            res.status(200).send(students)
-       } else if (name === 'Mario'){
-           res.warning(400).send('Mama mia')
+       } else if (name === ''){
+           res.warning(400).send('you must enter a name')
        } else {
            res.critical(400).send('That student already exists.')
        }
