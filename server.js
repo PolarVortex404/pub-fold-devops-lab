@@ -41,7 +41,7 @@ app.post('/api/students', (req, res) => {
            students.push(name)
            res.status(200).send(students)
        } else if (name === 'Mario'){
-           res.warning(400).send('You must ')
+           res.warning(400).send('Mama mia')
        } else {
            res.critical(400).send('That student already exists.')
        }
